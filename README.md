@@ -161,7 +161,7 @@ python -m pytest --cov=app --cov-report=html
 ## 6. Контакты и поддержка
 
 ### Автор
-- **Студент** — разработка в рамках учебного проекта
+- **Николаев Даниил** — разработка в рамках учебного проекта
 
 ### Связь
 - **GitHub Issues**: https://github.com/dant3s2w/yandex-maps-nearby-api/issues
