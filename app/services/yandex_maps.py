@@ -53,11 +53,7 @@ async def get_nearby_places(
     async with httpx.AsyncClient() as client:
         response = await client.get(YANDEX_GEOCODER_URL, params=params)
         response.raise_for_status()
-        data = await response.json()
-        print(f"DEBUG: type(data) = {type(data)}")  # Должно быть <class 'dict'>
-    print(
-        f"DEBUG: data keys = {data.keys() if isinstance(data, dict) else 'NOT A DICT'}"
-    )
+        data = response.json()
 
     places = []
     features = (
